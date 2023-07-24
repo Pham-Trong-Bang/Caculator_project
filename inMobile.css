@@ -9,27 +9,27 @@
         border-radius: 25px;
     }
     .stringBox {
-        width: 290px;
+        width: 310px;
         height: 100px;
         border-radius: 25px;
         padding-right: 10px;
-        margin: 30px 25px;
+        margin: 15px 15px;
         font-size: 50px;
         box-shadow: inset 0px 0px 10px 0.5px rgba(0, 0, 0, 0.164);
     }
     .number {
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         font-size: 40px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.164);
     }
     #boxNumber {
-        width: 300px;
-        margin: 15px 25px;
+        width: 320px;
+        margin: 15px 15px;
     }
     #iconEqual {
-        width: 112.5px;
+        width: 125px;
         border-bottom-right-radius: 25px;
     }
     #iconDel {
