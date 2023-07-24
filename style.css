@@ -39,9 +39,10 @@ body {
     border-radius: 30px;
     height: 4px;
     margin-top: 20px;
-    display: flex;
-    justify-content: right;
     display: none;
+}
+.stringBox:hover::-webkit-scrollbar-thumb {
+    display: block;
 }
 
 .number {

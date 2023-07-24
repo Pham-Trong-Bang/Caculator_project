@@ -15,42 +15,52 @@ var string = '';
 number0.addEventListener('click', function(){
     string += '0';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number1.addEventListener('click', function(){
     string += '1';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number2.addEventListener('click', function(){
     string += '2';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number3.addEventListener('click', function(){
     string += '3';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number4.addEventListener('click', function(){
     string += '4';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number5.addEventListener('click', function(){
     string += '5';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number6.addEventListener('click', function(){
     string += '6';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number7.addEventListener('click', function(){
     string += '7';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number8.addEventListener('click', function(){
     string += '8';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 number9.addEventListener('click', function(){
     string += '9';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 
 
@@ -65,22 +75,27 @@ let icon0 = document.querySelector("#icon0"); //thap phan
 icon1.addEventListener('click', function(){
     string += '+';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 icon2.addEventListener('click', function(){
     string += '&#8722;';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 icon3.addEventListener('click', function(){
     string += '&#215;';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 icon4.addEventListener('click', function(){
     string += '&#247;';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 icon0.addEventListener('click', function(){
     string += '.';
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 
 // Del Elements
@@ -91,6 +106,7 @@ let del = document.querySelector("#iconDel");
 ac.addEventListener('click', function(){
     string = ''
     stringBox.innerHTML = 0;
+    stringBox.style.justifyContent = 'right';
 });
 var take = '';
 var cnt = 1;
@@ -114,6 +130,7 @@ del.addEventListener('click', function(){
         if (string == '') {
             stringBox.innerHTML = 0;
         }
+        stringBox.style.justifyContent = 'right';
 });
 
 var iconAns = document.querySelector("#iconAns");
@@ -122,6 +139,7 @@ iconAns.addEventListener('click', function(){
     ans.toString();
     string += ans;
     stringBox.innerHTML = string;
+    stringBox.style.justifyContent = 'right';
 });
 
 // Phan ket qua
@@ -173,7 +191,10 @@ equal.addEventListener('click', function(){
     string = eval(temporary);
     if (typeof string === "number"){
         ans = string;
-    stringBox.innerHTML = '<p> = ' + string + '</p>'; 
+    stringBox.innerHTML =  '= ' + string ;
+        if ((string.toString()).length >= 12 ) {
+        stringBox.style.justifyContent = 'left';
+        }
     }
     else if (string == undefined) {
         stringBox.innerHTML = 'ERROR !';
@@ -181,4 +202,6 @@ equal.addEventListener('click', function(){
     string = '';
     temporary = '';
     array = [];
+    
 });
+
