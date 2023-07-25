@@ -185,7 +185,7 @@ equal.addEventListener('click', function(){
         temporary += array[i];
     }
     var end = (temporary.length) - 1;
-    if (temporary[end] == '+' || temporary[end] == '-' || temporary[end] == '*' || temporary[end] == '/') {
+    if (temporary[end] == '+' || temporary[end] == '-' || temporary[end] == '*' || temporary[end] == '/' || temporary[0] == '*' || temporary[0] == '/') {
         temporary = '';
     }
     string = eval(temporary);
